@@ -1,0 +1,849 @@
+@import "effect.less";
+.test{
+    height: 100px;
+    width: 100px;
+    color: #1a1a1a;
+    font-size: 30px;
+    margin-top: 50px;
+    padding-bottom: 50px;
+
+
+    // animation           : myfirst 5s linear infinite;
+    // -moz-animation      : myfirst 5s linear infinite;	/* Firefox */
+    // -webkit-animation   : myfirst 5s linear infinite;	/* Safari 和 Chrome */
+    // -o-animation        : myfirst 5s linear infinite;	/* Opera */
+    // -ms-animation       : myfirst 5s linear infinite;	/* Microsoft */
+}
+@keyframes myfirst {
+    0%{
+        border: 1px red solid;
+    }
+    50%{
+        border: 1px yellow solid;
+    }
+    100%{
+        border: 1px blue solid;
+    }
+}
+
+html{
+    border: 1px blue solid;
+}
+.yan-main{
+
+    .yan-main-banner{
+        height: 646px;
+        width: 100%;
+        background: url('../images/subject_banner.png') no-repeat center;
+        background-size: 1920px 646px;
+        position: relative;
+        .yan-main-banner-center{
+            width: 1200px;
+            height: auto;
+            margin: 0 auto;
+            padding: 150px 0;
+            .yan-main-banner-center-t3{
+                font-size: 40px;
+                color: #38ffca;
+                font-style: oblique;
+            }
+            .yan-main-banner-center-t1{
+                font-size: 90px;
+                font-weight: bold;
+                color: #fff;
+                text-indent: -5px;
+            }
+            .yan-main-banner-center-t2{
+                font-size: 24px;
+                color: #fff;
+                font-style: oblique;
+                padding-bottom: 60px;
+                padding-top: 10px;
+                opacity: .5;
+            }
+        }
+        .yan-main-gradual-change{
+            width: 100%;
+            height: 581px;
+            overflow: hidden;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            z-index: -1;
+            .yan-main-gradual-change-one{
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                height: 581px;
+                width: 2611px;
+                background: url('../images/subject_shadow.png') no-repeat center;
+                background: none\9;
+                background-size: 2611px 581px;
+                z-index: -1;
+                animation           : bgGradualChange 3s linear infinite;
+                -moz-animation      : bgGradualChange 3s linear infinite;	/* Firefox */
+                -webkit-animation   : bgGradualChange 3s linear infinite;	/* Safari 和 Chrome */
+                -o-animation        : bgGradualChange 3s linear infinite;	/* Opera */
+                -ms-animation       : bgGradualChange 3s linear infinite;	/* Microsoft */
+            }
+            .yan-main-gradual-change-two{
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                height: 581px;
+                width: 2611px;
+                background: #00dba5;
+                background: none\9;
+                background-size: 2611px 581px;
+                z-index: -2;
+                // animation           : bgGradualChange 3s linear 3s infinite;
+                // -moz-animation      : bgGradualChange 3s linear 3s infinite;	/* Firefox */
+                // -webkit-animation   : bgGradualChange 3s linear 3s infinite;	/* Safari 和 Chrome */
+                // -o-animation        : bgGradualChange 3s linear 3s infinite;	/* Opera */
+                // -ms-animation       : bgGradualChange 3s linear 3s infinite;	/* Microsoft */
+            }
+        }
+    }
+
+    .yan-main-server{
+        width: 1200px;
+        height: 825px;
+        display: block;
+        margin: 0 auto;
+        .yan-main-server-t1{
+            font-size: 46px;
+            font-weight: bold;
+            color: #042b52;
+            text-align: center;
+            line-height: 160px;
+        }
+        .yan-main-server-types{
+            >li{
+                width:33%;
+                height: 230px;
+                float: left;
+                text-align: center;
+                padding-top: 75px;
+                >h4{
+                    padding-top: 30px;
+                    color: #042b52;
+                    font-size: 20px;
+                    font-weight: bold;
+                    padding-bottom: 10px;
+                }
+                >p{
+                    color: #999999;
+                    font-size: 18px;
+                    font-weight: lighter;
+                }
+            }
+        }
+    }
+    .yan-main-enterprise{
+        background: #042b52;
+        .yan-main-enterprise-center{
+            height: 445px;
+            width: 1200px;
+            margin: 0 auto;
+            >div{
+                float: left;
+            }
+            .yan-main-enterprise-center-chart{
+                width: 437px;
+                height: 445px;
+                padding: 0 50px;
+                background: url('../images/03-10.png') no-repeat bottom;
+                background-size: 437px 361px;
+                position: relative;
+                .yan-main-enterprise-center-chart-broken{
+                    position: absolute;
+                    top: 125px;
+                    left: 90px;
+                    width: 265px;
+                    height: 125px;
+                    .yan-main-chart-broken-line{
+                        overflow: hidden;
+                        width: 0;
+                        height: inherit;
+                        transition: 1s;
+                    }
+                }
+                .yan-main-enterprise-center-chart-columnar{
+                    position: absolute;
+                    width: 220px;
+                    height: 125px;
+                    top: 187px;
+                    left: 115px;
+                    background: url('../images/03-6.png') no-repeat bottom center;
+                    background-size: 100% 6px;
+                    .yan-main-chart-columnar-bar{
+                        height: inherit;
+                        width: inherit;
+                        >span{
+                            position: absolute;
+                            display: block;
+                            width: 40px;
+                            overflow: hidden;
+                            height: 0px;
+                            bottom: 6px;
+                            transition: .25s linear;
+                            float: left;
+                            >img{
+                                position: absolute;
+                                width: 40px;
+                                bottom: 0;
+                            }
+                        }
+                        .yan-main-chart-columnarBar1{
+                            left: 0;
+                        }
+                        .yan-main-chart-columnarBar2{
+                            left: 45px;
+                        }
+                        .yan-main-chart-columnarBar3{
+                            left: 90px;
+                        }
+                        .yan-main-chart-columnarBar4{
+                            left: 135px;
+                        }
+                        .yan-main-chart-columnarBar5{
+                            left: 180px;
+                        }
+                    }
+                }
+            }
+            .yan-main-enterprise-center-info{
+                width: 560px;
+                height: inherit;
+                padding: 0 50px;
+                >h1{
+                    color: #fff;
+                    font-size: 46px;
+                    font-weight: bold;
+                    padding-top: 120px;
+                }
+                >h5{
+                    font-size: 18px;
+                    font-weight: lighter;
+                    color: #fff;
+
+                }
+            }
+        }
+    }
+    .yan-main-deal{
+        .yan-main-deal-center{
+            width: 1200px;
+            height: 1060px;
+            margin: 0 auto;
+
+            .yan-main-deal-center-circle{
+                // overflow: hidden;
+                height: 750px;
+                position: relative;
+                // padding-top: 80px;
+                .yan-circle{
+                    // transition: all 0.1s;
+                    // -webkit-transition: all 0.1s;
+                    // -moz-transition: all 0.1s;
+                    // -o-transition: all 0.1s;
+                    // display: inline-block;
+                    position: absolute;
+                }
+                .yan-circle-1{
+                    left: 490px;
+                    top: 535px;
+                    z-index: 2;
+                }
+                .yan-circle-2{
+                    top: 80px;
+                    left: 130px;
+                }
+                .yan-circle-3{
+                    left: 820px;
+                    top: 187px;
+                }
+                .yan-circle-4{
+                    top: 250px;
+                    left: 540px;
+                    z-index: -1;
+                }
+                .yan-circle-5{
+                    left: 890px;
+                    top: 530px;
+                }
+                .yan-circle-6{
+                    top: 410px;
+                    right: 40px;
+                }
+                .yan-circle-7{
+                    top: 573px;
+                    left: -138px;
+                }
+                .yan-circle-8{
+                    top: 694px;
+                    right: -33px;
+                }
+                .yan-circle-9{
+                    left: 82px;
+                    top: 675px;
+                }
+                .yan-circle-10{
+                    right: -83px;
+                    top: 148px;
+                }
+            }
+        }
+    }
+
+    .yan-main-operation{
+        background: #042b52;
+        height: 1040px;
+        .yan-main-operation-center{
+            width: 1200px;
+            margin: 0 auto;
+        }
+        .yan-main-operation-content{
+            width: 783px;
+            height: 765px;
+            margin: 0 auto;
+            background: url('../images/05-1.png') no-repeat center;
+            position: relative;
+            .yan-main-operation-circle-effect{
+                height: 140px;
+                width: 140px;
+                position: absolute;
+                left: 325px;
+                top: 380px;
+                >div{
+
+                    position: absolute;
+                }
+                .yan-main-operation-pointer{
+                    position: absolute;
+                    top: 50px;
+                    left: 35px;
+                    z-index: 3;
+                }
+                .yan-main-operation-circle1{
+                    width: 70px;
+                    height: 70px;
+                    background: #08e3a9;
+                    top: 35px;
+                    left: 35px;
+                    z-index: 2;
+                    border-radius: 100%;
+                }
+                .yan-main-operation-circle2{
+                    width: 190px;
+                    height: 190px;
+                    top: -22.5px;
+                    left: -22.5px;
+                    border-radius: 100%;
+                    background-color: rgba(56, 255, 202,.149);
+                    animation           : diffuse 5s ease infinite;
+                    -moz-animation      : diffuse 5s ease infinite;
+                    -webkit-animation   : diffuse 5s ease infinite;
+                    -o-animation        : diffuse 5s ease infinite;
+                    -ms-animation       : diffuse 5s ease infinite;
+                    transition: .25s;
+                }
+                .yan-main-operation-circle3{
+                    width: 190px;
+                    height: 190px;
+                    top: -22.5px;
+                    left: -22.5px;
+                    border-radius: 100%;
+                    background: #38ffca;
+                    opacity: 0;
+                    animation           : diffuse 5s ease 1.5s infinite;
+                    -moz-animation      : diffuse 5s ease 1.5s infinite;
+                    -webkit-animation   : diffuse 5s ease 1.5s infinite;
+                    -o-animation        : diffuse 5s ease 1.5s infinite;
+                    -ms-animation       : diffuse 5s ease 1.5s infinite;
+                    transition: .25s;
+                }
+                .yan-main-operation-circle4{
+                    width: 190px;
+                    height: 190px;
+                    top: -22.5px;
+                    left: -22.5px;
+                    background: #0ee6ad;
+                    border-radius: 100%;
+                    opacity: 0;
+                    border: 0.5px #0edaa3 solid;;
+                    animation           : diffuse 5s ease 3s infinite;
+                    -moz-animation      : diffuse 5s ease 3s infinite;
+                    -webkit-animation   : diffuse 5s ease 3s infinite;
+                    -o-animation        : diffuse 5s ease 3s infinite;
+                    -ms-animation       : diffuse 5s ease 3s infinite;
+                    transition: .25s;
+                }
+            }
+        }
+    }
+
+    .yan-main-bazaar{
+        height: 613px;
+        .yan-main-bazaar-center{
+            width: 1200px;
+            margin: 0 auto;
+            .yan-main-bazaar-img{
+                overflow: hidden;
+                margin-top: 60px;
+                >li{
+                    width: 380px;
+                    height: 274px;
+                    float: left;
+                    margin-left: 15px;
+                    position: relative;
+                    // transition: .5s;
+                    overflow: hidden;
+                    >img{
+                        width: inherit;
+                        height: inherit;
+                        transition: .5s;
+                    }
+                    >a{
+                        transition: .5s;
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        opacity: 0;
+                        display: block;
+                        width: 100%;
+                        height: inherit;
+                        color:#fff;
+                        text-align: center;
+                        font-size: 20px;
+                        >p{
+                            padding:110px 0;
+                        }
+                    }
+                    &:hover{
+                        >img{
+                            transform: scale(1.1);
+                        }
+                        >a{
+                            opacity: 1;
+                            background: rgba(0,0,0,.5);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    .yan-main-map{
+        height: 1140px;
+        background: #042b52;
+        .yan-main-map-center{
+            width: 1200px;
+            margin: 0 auto;
+        }
+        .yan-main-map-content{
+            width: 1260px;
+            height: 420px;
+            background: url('../images/07.png')  no-repeat center;
+            background-size: 1257px 420px;
+            margin: 70px auto;
+            .yan-main-map-content-label{
+                position: relative;
+                height: inherit;
+                >div{
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                }
+
+                .yan-main-map-content-label-title{
+                    width: 114px;
+                    height: 37px;
+                    line-height: 37px;
+                    text-align: center;
+                    color: #042b52;
+                    font-size: 24px;
+                    font-weight: bold;
+                }
+                .yan-label-title1{
+                    top: 139px;
+                    left: 212px;
+                }
+                .yan-label-title2{
+                    top: 73px;
+                    left: 931px;
+                }
+                .yan-label-title3{
+                    top: 196px;
+                    left: 916px;
+                }
+                .yan-main-map-content-label-effect{
+                    width: 110px;
+                    height: 110px;
+                    >div{
+                        position: absolute;
+                        transition: .25s;
+                    }
+                }
+                .yan-label1{
+                    top: 70px;
+                    left: 300px;
+                }
+                .yan-label2{
+                    top: 120px;
+                    left: 820px;
+                }
+                .yan-label3{
+                    top: 60px;
+                    left: 850px;
+                }
+                .yan-label-effect1{
+                    left: 27.5px;
+                    top: 27.5px;
+                    width:55px;
+                    height: 55px;
+                    border-radius: 100%;
+                    background-color: rgba(56, 255, 202,.149);
+                    opacity: 0;
+                }
+                .yan-label-effect2{
+                    left: 45px;
+                    top: 45px;
+                    width:20px;
+                    height: 20px;
+                    border-radius: 100%;
+                    background: #38ffca;
+                    opacity: 0;
+
+                }
+                .yan-label-effect3{
+                    left: 49px;
+                    top: 49px;
+                    width:10px;
+                    height: 10px;
+                    border-radius: 100%;
+                    background: #0ee6ad;
+                    border: 1px #0edaa3 solid;;
+                    opacity: 0;
+
+                }
+                .yan-label-effectAnimation1{
+                    animation           : diffuse_circle_a 4s ease infinite;
+                }
+                .yan-label-effectAnimation2{
+                    animation           : diffuse_circle_b 4s ease 1s infinite;
+                }
+                .yan-label-effectAnimation3{
+                    animation           : diffuse_circle_c 4s ease 2s infinite;
+                }
+            }
+        }
+        .yan-main-map-comparison{
+            width: 1200px;
+            margin: 0 auto;
+            height: 370px;
+            background: #04274a;
+            overflow: hidden;
+            >div{
+                float: left;
+            }
+            .yan-main-map-comparison-l{
+                width: 40%;
+            }
+            .yan-main-map-comparison-c{
+                width: 20%;
+                color: #fff;
+                line-height: 370px;
+                font-size: 72px;
+                font-weight: bold;
+                text-align: center;
+            }
+            .yan-main-map-comparison-r{
+                width: 40%;
+            }
+        }
+    }
+
+    .yan-main-bottom{
+        height: 225px;
+        .yan-main-bottom-center{
+            width: 1200px;
+            height: inherit;
+            margin: 0 auto;
+        }
+    }
+
+}
+.yan-main-register{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    /*right: 0;
+    bottom: 0;
+    margin: auto;*/
+    /*-webkit-transform: translate(-50%,-50%);
+        -o-transform: translate(-50%,-50%);
+        -moz-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);*/
+    width: 888px;
+    height: 470px;
+    margin: -235px 0 0 -444px;
+    z-index: 10;
+    background: #fff;
+    .yan-main-register-center{
+
+        .yan-main-register-center-t1{
+            text-align: center;
+            font-size: 32px;
+            color: #042b52;
+            line-height: 110px;
+        }
+        .yan-main-register-center-flow{
+            width: 740px;
+            margin: 0 auto;
+            overflow: hidden;
+            >div{
+                float: left;
+                height: 50px;
+            }
+            .yan-main-register-center-flow-l{
+                width: 80px;
+                color: #00dea3;
+                font-size: 20px;
+            }
+            .yan-main-register-center-flow-r{
+                width: 660px;
+                border-bottom: 1px #999999 solid;
+                .yan-main-register-center-flow-r-c{
+                    overflow: hidden;
+                    display: flex;
+                    justify-content: space-between;
+                    float: left\9;
+
+                    >span{
+                        margin-right: 26px\9;
+                        display: inline-block;
+                        height: 50px;
+                        line-height: 50px;
+                        font-size: 18px;
+                        color: #999999;
+                        &:first-child{
+                            border-bottom: 3px #00dea3 solid;
+                            height: 48px;
+                        }
+                    }
+                }
+            }
+        }
+        .yan-main-register-center-from{
+            width: 740px;
+            height: auto;
+            margin: 0 auto;
+            .yan-main-register-center-from-t2{
+                margin: 50px 35px;
+                color: #042b52;
+                font-size: 18px;
+                text-align: center;
+            }
+            .yan-main-register-center-from-p1{
+                // width: 340px;
+                // height: 40px;
+                // margin: 0 auto 15px auto;
+                margin-bottom: 15px;
+                margin-left: 200px;
+                >input{
+                    border: 1px #999999 solid;
+                    height: 38px;
+                    line-height: 38px;
+                    width: 340px;
+                    border-radius: 1px;
+                    text-align: center;
+                    transition: .25s;
+                    font-size: 18px;
+                    color: #00dea3;
+                    &::-webkit-input-placeholder{
+                        transition: .25s;
+                    }
+                    &:-moz-placeholder{
+                        transition: .25s;
+                    }
+                    &::-moz-placeholder{
+                        transition: .25s;
+                    }
+                    &:-ms-input-placeholder{
+                        transition: .25s;
+                    }
+                    &:focus{
+                        &::-webkit-input-placeholder{
+                            color: #00dea3;
+                        }
+                        &:-moz-placeholder{
+                            color: #00dea3;
+                        }
+                        &::-moz-placeholder{
+                            color: #00dea3;
+                        }
+                        &:-ms-input-placeholder{
+                            color: #00dea3;
+                        }
+                        border: 1px #00dea3 solid;
+                    }
+                }
+                >button{
+                    width: 340px;
+                    height: 40px;
+                    background: #999999;
+                    text-align: center;
+                    font-size: 18px;
+                    color: #fff;
+                    border-radius: 1px;
+                    transition: .5s;
+                    &:hover{
+                        background: #00dea3;
+                    }
+                    &:active{
+                        background: #009878;
+                    }
+                }
+                >span{
+                    line-height: 38px;
+                    padding-left: 10px;
+                    visibility: hidden;
+                }
+            }
+            .yan-main-register-from-success{
+                >input{
+                    border: 1px #00dea3 solid;
+                }
+            }
+            .yan-main-register-from-error{
+                // text-align: center;
+                // border: 1px red solid;
+                >input{
+                    border: 1px red solid;
+                }
+                >span{
+                    visibility: visible;
+                    color: red;
+                }
+            }
+            .yan-main-register-from-title{
+                margin-top: -40px;
+                padding-bottom: 10px;
+                text-align: center;
+                font-size: 14px;
+                color: red;
+            }
+        }
+    }
+}
+.yan-main-close{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 20px;
+    height: 20px;
+    display: block;
+    background: url('../images/close.png') no-repeat center;
+    background-size: 20px;
+    cursor: pointer;
+}
+.yan-main-center-top{
+    text-align: center;
+    >h1{
+        padding-top: 80px;
+        font-size: 46px;
+        color: #042b52;
+        font-weight: bold;
+    }
+    >h5{
+        font-size: 18px;
+        color: #999999;
+        font-weight: lighter;
+    }
+    .yan-main-color-white{
+        color: #fff;
+    }
+    .yan-main-color-gray{
+        color: #fff;
+    }
+}
+.yan-main-no-paddingtop{
+    >h1{
+        padding-top: 50px;
+    }
+    >h5{
+        line-height: 45px;
+    }
+}
+.yan-main-margintop-30{
+    margin-top: 30px;
+}
+.yan-placeholder-color-block{
+    display: inline-block;
+    height: 8px;
+    width: 35px;
+    background: #38ffca;
+    margin: 25px 0;
+}
+.yan-btn{
+    display: inline-block;
+    width: 198px;
+    height: 52px;
+    line-height: 52px;
+    color: #042b52;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 2px;
+    background: #38ffca;
+    text-align: center;
+    cursor: pointer;
+    transition: .25s;
+    &:hover{
+        color:#fff;
+	    background:rgba(56,255,202,.75);
+    }
+}
+.yan-marks{
+    width: 324px;
+    height: auto;
+    background: white;
+    border-radius: 3px;
+    padding: 40px;
+    margin: auto;
+    position: fixed;
+    top: 130px;
+    left: 50%;
+    z-index: 11;
+    margin-left: -162px;
+    transition: .25s;
+    /*-webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);*/
+            text-align: center;
+    .yan-marks-title{
+        font-size: 34px;
+        color: #ce8f5b;
+        margin-bottom: 25px;
+    }
+    .yan-marks-btn{
+        width: 126px;
+        background-color: #ce8f5b;
+        color: white;
+        text-align: center;
+        line-height: 30px;
+        border-radius: 3px;
+        display: inline-block;
+        cursor: pointer;
+        margin: 0px auto;
+        border: 1px solid #ce8f5b;
+        font-size: 14px;
+    }
+}
+.yan-btn-enter{
+    >button{
+        background: #00dba5 !important;
+    }
+}
